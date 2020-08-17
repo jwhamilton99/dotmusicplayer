@@ -1,0 +1,187 @@
+/* GLOBAL */
+
+body {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #1a1a1a;
+	color: #e6e6e6;
+	font-size:25px;
+}
+
+#container {
+	max-width:1000px;
+	margin:20px;
+}
+
+#widthChecker {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* HEADER */
+
+#logo {
+	width:200px;
+	border-radius:45px;
+}
+
+#header {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#headerTitles {
+	margin-left:20px;
+	text-align:left;
+}
+
+#subtitle {
+	margin-top:-25px;
+}
+
+/* SUMMARY */
+
+#summary {
+	max-width:1000px;
+}
+
+#downloadBadge {
+	width:20%;
+}
+
+/* FOOTER */
+
+#footerLinks {
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	margin-top:-25px;
+}
+
+.footerLink {
+	padding: 0px 10px 0px 10px;
+}
+
+/* FEATURES */
+
+.featureDescriptionSubtitle {
+	margin-top:-25px;
+}
+
+#featuresContainer {
+	max-width:1500px;
+}	
+
+.featureDisplayLeft {
+	margin-top:-50px;
+	display:flex;
+	justify-content: left;
+	align-items: center;
+	height:600px;
+}
+
+.featureDisplayRight {
+	margin-top:-50px;
+	display:flex;
+	justify-content: right;
+	align-items: center;
+	height:600px;
+}
+
+.featureDescriptionRight {
+	display: flex;
+	justify-content: center;
+	text-align:left;
+	flex-direction:column;
+	height: 100%;
+	margin-left:10px;
+}
+
+.featureDescriptionLeft {
+	display: flex;
+	justify-content: center;
+	text-align:right;
+	flex-direction:column;
+	height: 100%;
+	margin-right:10px;
+}
+
+.featurePreview {
+	height: 100%;
+}
+
+.screenshot {
+	height:100%;
+}
+
+/* LINKS */
+
+a {
+	color: #3bffff;
+}
+
+a:hover {
+	color:#ff6666;
+}
+
+/* RESIZE */
+
+@media (max-width:800px) {
+	#widthChecker {
+		display: relative;
+		width:100%;
+	}
+	
+	#header {
+		flex-direction:column;
+	}
+	
+	#headerTitles {
+		text-align:center;
+	}
+	
+	.featureDisplay {
+		height:auto;
+	}
+	
+	.screenshot {
+		width:80vw;
+		max-width:500px;
+	}
+	
+	.featureDisplayLeft {
+		margin-top:0px;
+		flex-direction:column-reverse;
+		height:auto;
+	}
+	
+	.featureDescriptionLeft, .featureDescriptionRight {
+		text-align:center;
+	}
+	
+	.featureDisplayRight {
+		margin-top:0px;
+		flex-direction:column;
+		height:auto;
+	}
+}
+
+@media (max-width:500px) {
+	
+	
+	#footerLinks {
+		flex-direction:column;
+	}
+	
+	.footerLink {
+		margin-top:-5px;
+	}
+	
+	#firstLink {
+		margin-top:10px;
+	}
+}

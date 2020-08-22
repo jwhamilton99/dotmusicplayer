@@ -49,7 +49,8 @@ body {
 }
 
 #downloadBadge {
-	width:20%;
+	width:200px;
+	margin-bottom:40px;
 }
 
 /* FOOTER */
@@ -168,10 +169,14 @@ a:hover {
 		flex-direction:column;
 		height:auto;
 	}
+	
+	#downloadBadge {
+		width:200px;
+		margin-bottom:0px;
+	}
 }
 
 @media (max-width:500px) {
-	
 	
 	#footerLinks {
 		flex-direction:column;
